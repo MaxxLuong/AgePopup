@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Mageplaza_AlsoBought::configuration" title="Mageplaza Who Bought This Item Also Bought Module" sortOrder="1" />
+                        </resource>
+                    </resource>
+                </resource>
+                <resource id="Mageplaza_Core::menu">
+                    <resource id="Mageplaza_AlsoBought::alsobought" title="Mageplaza Who Bought This Item Also Bought" translate="title" sortOrder="10">
+                        <resource id="Mageplaza_AlsoBought::configuration_alsobought" title="Configuration" sortOrder="20"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
